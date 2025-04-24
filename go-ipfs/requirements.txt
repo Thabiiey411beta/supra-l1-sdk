@@ -1,0 +1,12 @@
+streamlit==1.29.0
+requests==2.31.0
+pandas==2.2.2
+numpy==1.26.4
+supra-l1-sdk==1.0.0
+cryptography==42.0.5
+stable-baselines3==2.2.1
+torch==2.2.0
+transformers==4.38.2
+ipfshttpclient==0.8.0
+python-dotenv==1.0.1
+plotly==5.22.0

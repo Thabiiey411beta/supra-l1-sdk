@@ -1,5 +1,5 @@
 cat <<EOF > liqui-mind/.gitignore
-# Environment
+#Environment
 .env
 __pycache__/
 *.pyc

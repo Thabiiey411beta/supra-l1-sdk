@@ -1,4 +1,4 @@
- LiquiMind
+𝙇𝙞𝙦𝙪𝙞𝙈𝙞𝙣𝙙
 
 A decentralized DeFi trading and yield aggregation platform on SupraChain, powered by AI, $MIND token, and NFT utilities.
 

@@ -1,0 +1,10 @@
+[package]
+name = "LiquiMind"
+version = "1.0.0"
+edition = "2023"
+
+[addresses]
+LiquiMind = "0x9516494976a6de49218b86c96cceac7eb0366de6610d068e861b3636beec1915"
+
+[dependencies]
+Supra = { git = "https://github.com/supraoracles/supra-move-sdk", rev = "main" }

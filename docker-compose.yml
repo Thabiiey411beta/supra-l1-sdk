@@ -1,0 +1,31 @@
+cat <<EOF > liqui-mind/docker-compose.yml
+version: '3.8'
+services:
+  ipfs:
+    image: ipfs/go-ipfs:v0.20.0
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./ipfs_data:/data/ipfs
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - ipfs
+    environment:
+      - SUPRA_RPC=\${SUPRA_RPC}
+      - PRIVATE_KEY=\${PRIVATE_KEY}
+      - ENCRYPTION_KEY=\${ENCRYPTION_KEY}
+      - CHAINGPT_API_KEY=\${CHAINGPT_API_KEY}
+  streamlit:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    environment:
+      - SUPRA_RPC=\${SUPRA_RPC}
+      - ENCRYPTION_KEY=\${ENCRYPTION_KEY}
+      - CHAINGPT_API_KEY=\${CHAINGPT_API_KEY}
+EOF

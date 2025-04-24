@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #1E3A8A, #10B981);
+    color: #F3F4F6;
+}
+.stApp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+h1, h2, h3 {
+    color: #F3F4F6;
+}
+.stButton>button {
+    background-color: #10B981;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s;
+}
+.stButton>button:hover {
+    background-color: #059669;
+}
+.stTextInput>div>input {
+    background-color: #2D3748;
+    color: #F3F4F6;
+    border-radius: 8px;
+    padding: 8px;
+}
+@media (max-width: 640px) {
+    .stApp {
+        padding: 8px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .stButton>button {
+        padding: 8px 16px;
+    }
+}
+.stButton>button:focus {
+    outline: 2px solid #10B981;
+}

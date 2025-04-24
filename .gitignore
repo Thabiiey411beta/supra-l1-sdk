@@ -1,0 +1,21 @@
+cat <<EOF > liqui-mind/.gitignore
+# Environment
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+*.DS_Store
+# IPFS
+ipfs_data/
+# Models
+models/*.zip
+# Cache
+courses_cache.json
+# Node
+node_modules/
+EOF
